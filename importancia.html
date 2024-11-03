@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importancia de la Gestión de Servicios de TI - ITIL v4</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-menu {
+            margin-top: 1rem;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: 4rem auto;
+        }
+
+        .attribute-wheel {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: rotate 60s linear infinite;
+        }
+
+        .attribute {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
+
+        .attribute:hover {
+            transform: scale(1.1);
+            background: var(--primary-color);
+            z-index: 10;
+        }
+
+        .attribute-details {
+            display: none;
+            position: absolute;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 250px;
+            z-index: 100;
+        }
+
+       
+
+        @media (max-width: 768px) {
+            .nav-menu ul {
+                flex-direction: column;
+            }
+            
+            .hero {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="https://example.com" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                    <path d="M12 20h16M20 12v16" stroke="white" stroke-width="2"/>
+                </svg>
+                ITIL v4
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="gestion.html">Inicio</a></li>
+                    <li><a href="importancia.html">Importancia de la Gestión de TI</a></li>
+                    <li><a href="enfoque.html">Enfoques Metodológicos</a></li>
+                    <li><a href="concepto.html">Conceptos Clave</a></li>
+                    <li><a href="modelo.html">Modelo ITIL</a></li>
+                    <li><a href="bibliografia.html">Bibliografía</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Importancia de la Gestión de Servicios de TI</h1>
+            <p>Descubre cómo la gestión efectiva de servicios de TI impulsa el éxito empresarial</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h2>La Gestión de Servicios en la Era Digital</h2>
+            <p>En el panorama empresarial actual, la tecnología de la información no es simplemente un soporte para las operaciones; es un elemento estratégico que impulsa la innovación y el crecimiento. La gestión de servicios de TI, fundamentada en el marco de ITIL v4, proporciona las herramientas y metodologías necesarias para garantizar que los servicios tecnológicos generen valor real para la organización.</p>
+            
+            <h3>Alineación con los Objetivos Empresariales</h3>
+            <p>ITIL v4 enfatiza la importancia de alinear los servicios de TI con los objetivos estratégicos de la organización. Esta alineación asegura que cada inversión en tecnología, cada proceso implementado y cada servicio ofrecido contribuya directamente al éxito empresarial y la satisfacción del cliente.</p>
+        </section>
+
+        <div class="wheel-container">
+            <div class="attribute-wheel" id="attributeWheel"></div>
+        </div>
+    </main>
+
+    <script>
+        const attributes = [
+            {
+                title: "Eficiencia Operativa",
+                description: "Optimización de procesos y recursos para maximizar el rendimiento y minimizar costos"
+            },
+            {
+                title: "Valor Empresarial",
+                description: "Generación de beneficios tangibles alineados con los objetivos del negocio"
+            },
+            {
+                title: "Innovación Continua",
+                description: "Fomento de nuevas ideas y mejoras en servicios y procesos"
+            },
+            {
+                title: "Satisfacción del Cliente",
+                description: "Enfoque en experiencias positivas y cumplimiento de expectativas"
+            },
+            {
+                title: "Agilidad",
+                description: "Capacidad de adaptación rápida a cambios del mercado y necesidades empresariales"
+            },
+            {
+                title: "Calidad de Servicio",
+                description: "Mantenimiento de altos estándares en la entrega de servicios"
+            }
+        ];
+
+        function createWheel() {
+            const wheel = document.getElementById('attributeWheel');
+            const angleStep = (2 * Math.PI) / attributes.length;
+            const radius = 200;
+
+            attributes.forEach((attr, index) => {
+                const angle = angleStep * index;
+                const x = radius * Math.cos(angle) + radius;
+                const y = radius * Math.sin(angle) + radius;
+
+                const attribute = document.createElement('div');
+                attribute.className = 'attribute';
+                attribute.innerHTML = attr.title;
+                attribute.style.left = `${x - 60}px`;
+                attribute.style.top = `${y - 60}px`;
+
+                const details = document.createElement('div');
+                details.className = 'attribute-details';
+                details.innerHTML = `<h4>${attr.title}</h4><p>${attr.description}</p>`;
+
+                attribute.addEventListener('mouseenter', () => {
+                    details.style.display = 'block';
+                    details.style.left = `${x + 30}px`;
+                    details.style.top = `${y}px`;
+                });
+
+                attribute.addEventListener('mouseleave', () => {
+                    details.style.display = 'none';
+                });
+
+                wheel.appendChild(attribute);
+                wheel.appendChild(details);
+            });
+        }
+
+        createWheel();
+    </script>
+</body></html>

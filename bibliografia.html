@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliografía - ITIL v4</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-menu {
+            margin-top: 1rem;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .bibliography-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .reference-list {
+            margin-top: 2rem;
+        }
+
+        .reference-item {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .reference-item:hover {
+            transform: translateX(10px);
+        }
+
+        .reference-type {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .reference-content {
+            margin-bottom: 0.5rem;
+        }
+
+        .reference-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .reference-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        .reference-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu ul {
+                flex-direction: column;
+            }
+            
+            .hero {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="https://example.com" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                    <path d="M12 20h16M20 12v16" stroke="white" stroke-width="2"/>
+                </svg>
+                ITIL v4
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="gestion.html">Inicio</a></li>
+                    <li><a href="importancia.html">Importancia de la Gestión de TI</a></li>
+                    <li><a href="enfoque.html">Enfoques Metodológicos</a></li>
+                    <li><a href="concepto.html">Conceptos Clave</a></li>
+                    <li><a href="modelo.html">Modelo ITIL</a></li>
+                    <li><a href="bibliografia.html">Bibliografía</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bibliografía</h1>
+            <p>Referencias y recursos fundamentales sobre ITIL v4 y Gestión de Servicios de TI</p>
+        </div>
+    </section>
+
+    <main class="bibliography-section">
+        <div class="reference-list">
+            <div class="reference-item">
+                <div class="reference-type">Libro Principal</div>
+                <div class="reference-content">Axelos. (2019). ITIL® Foundation: ITIL 4 Edition. The Stationery Office.</div>
+                <div class="reference-meta">ISBN: 978-0113316076</div>
+            </div>
+
+            <div class="reference-item">
+                <div class="reference-type">Marco de Referencia</div>
+                <div class="reference-content">Axelos. (2020). ITIL® 4: Direct, Plan and Improve. The Stationery Office.</div>
+                <div class="reference-meta">ISBN: 978-0113316359</div>
+            </div>
+
+            <div class="reference-item">
+                <div class="reference-type">Publicación Académica</div>
+                <div class="reference-content">Aguiar, J., Pereira, R., Vasconcelos, J. B., & Bianchi, I. (2018). An overlapless incident management maturity model for multi-framework assessment. Computers & Security, 77, 436-453.</div>
+                <div class="reference-meta">DOI: 10.1016/j.cose.2018.04.014</div>
+            </div>
+
+            <div class="reference-item">
+                <div class="reference-type">Guía Práctica</div>
+                <div class="reference-content">Axelos. (2020). ITIL® 4: Create, Deliver and Support. The Stationery Office.</div>
+                <div class="reference-meta">ISBN: 978-0113316328</div>
+            </div>
+
+            <div class="reference-item">
+                <div class="reference-type">Estándar Internacional</div>
+                <div class="reference-content">ISO/IEC 20000-1:2018. Information technology - Service management - Part 1: Service management system requirements.</div>
+                <div class="reference-meta">International Organization for Standardization</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const referenceItems = document.querySelectorAll('.reference-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateX(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        referenceItems.forEach(item => {
+            item.style.opacity = 0;
+            item.style.transform = 'translateX(-20px)';
+            item.style.transition = 'all 0.5s ease-out';
+            observer.observe(item);
+        });
+    </script>
+</body></html>

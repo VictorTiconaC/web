@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIL v4 - Gestión de Servicios de TI</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-menu {
+            margin-top: 1rem;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu ul {
+                flex-direction: column;
+            }
+            
+            .hero {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="https://example.com" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                    <path d="M12 20h16M20 12v16" stroke="white" stroke-width="2"/>
+                </svg>
+                ITIL v4
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="gestion.html">Inicio</a></li>
+                    <li><a href="importancia.html">Importancia de la Gestión de TI</a></li>
+                    <li><a href="enfoque.html">Enfoques Metodológicos</a></li>
+                    <li><a href="concepto.html">Conceptos Clave</a></li>
+                    <li><a href="modelo.html">Modelo ITIL</a></li>
+                    <li><a href="bibliografia.html">Bibliografía</a></li>
+               
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Gestión de Servicios de TI con ITIL v4</h1>
+            <p>Descubre cómo transformar tu organización mediante las mejores prácticas en gestión de servicios de TI</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <h2>Bienvenido a tu recurso definitivo sobre ITIL v4</h2>
+        <p>ITIL v4 representa la evolución más reciente en la gestión de servicios de TI, proporcionando un marco de trabajo integral que permite a las organizaciones alinear sus servicios de TI con las necesidades del negocio, manteniendo la eficiencia y promoviendo la mejora continua.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path fill="var(--secondary-color)" d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/>
+                </svg>
+                <h3>Fundamentos Sólidos</h3>
+                <p>Comprende los principios básicos y conceptos fundamentales que sustentan ITIL v4.</p>
+            </div>
+            
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path fill="var(--secondary-color)" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/>
+                </svg>
+                <h3>Mejores Prácticas</h3>
+                <p>Accede a las mejores prácticas actualizadas para la gestión moderna de servicios de TI.</p>
+            </div>
+            
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path fill="var(--secondary-color)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                </svg>
+                <h3>Recursos de Aprendizaje</h3>
+                <p>Explora nuestros recursos educativos diseñados para todos los niveles de experiencia.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Animación suave para el scroll del menú
+        document.querySelectorAll('a[href^="https"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('Navegando a:', this.getAttribute('href'));
+            });
+        });
+
+        // Animación para las tarjetas de características
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-card').forEach((card) => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body></html>
